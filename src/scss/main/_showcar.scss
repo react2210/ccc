@@ -1,0 +1,38 @@
+#car_container {
+  width: 100%;
+  padding: 300px 0;
+  height: 100vh;
+  background: #000;
+  position: relative;
+
+  &.on .car_wrap {
+  }
+
+  .car_wrap {
+    width: 1344px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    > div {
+      position: absolute;
+    }
+
+    .car_body {
+      left: 0;
+      top: 0;
+    }
+
+    .left_tire {
+      left: 139px;
+      top: 130px;
+      transform: rotate(360deg);
+    }
+
+    .right_tire {
+      right: 120px;
+      top: 123px;
+      transform: rotate(360deg);
+    }
+  }
+}

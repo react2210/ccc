@@ -1,0 +1,29 @@
+$tablet: 1179px;
+$mobile: 539px;
+
+//common
+@import "common/reset";
+@import "common/font";
+@import "common/header";
+@import "common/layout";
+@import "common/footer";
+@import "common/popup";
+
+//main
+@import "main/visual";
+@import "main/carslide";
+@import "main/banner";
+@import "main/Slide";
+@import "main/detailveiw";
+@import "main/article";
+@import "main/showcar";
+@import "main/specification";
+@import "main/btns";
+
+//sub
+@import "sub/community";
+@import "sub/department";
+@import "sub/gallerty";
+@import "sub/location";
+@import "sub/member";
+@import "sub/youtube";

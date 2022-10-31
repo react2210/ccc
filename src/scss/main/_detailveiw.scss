@@ -1,0 +1,96 @@
+.view_title {
+  padding-top: 240px;
+  text-align: center;
+  margin-bottom: 20px;
+  font: 72px/1 "genesys";
+  color: #d70d25;
+
+  > span {
+    color: #222;
+  }
+}
+
+ul.sub_menu_wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  > li {
+    margin-right: 20px;
+  }
+}
+
+.detail_view {
+  width: 1460px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+  .left {
+    width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    > div {
+      width: 100%;
+      height: 340px;
+      background: #000;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .center {
+    width: 730px;
+    height: 700px;
+    background: #000;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .right {
+    width: 350px;
+    height: 700px;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "Life Style";
+      text-align: center;
+      line-height: 700px;
+      font-size: 32px;
+      color: #fff;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      transition: all 0.6s;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.6s;
+    }
+
+    &:hover::before {
+      opacity: 0;
+    }
+  }
+}
